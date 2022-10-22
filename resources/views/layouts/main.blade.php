@@ -29,7 +29,7 @@
 </head>
 
 <body>
-
+  {{-- <div id="app"></div> --}}
 @include('layouts.header')
 
 @include('layouts.sidebar')
@@ -41,6 +41,8 @@
 </main>
 
 @include('layouts.footer')
+
+
 
 </body>
 

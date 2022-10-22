@@ -4,7 +4,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="{{ asset('/dashboard') }}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -16,22 +16,22 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.html">
+            <a href="{{ route('countries.index') }}">
               <i class="bi bi-circle"></i><span>Country</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
+            <a href="{{ route('states.index') }}">
               <i class="bi bi-circle"></i><span>State</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="{{ route('cities.index') }}">
               <i class="bi bi-circle"></i><span>City</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="{{ route('departments.index') }}">
               <i class="bi bi-circle"></i><span>Department</span>
             </a>
           </li>
@@ -44,7 +44,7 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
+            <a href="{{ route('users.index') }}">
               <i class="bi bi-circle"></i><span>User</span>
             </a>
           </li>

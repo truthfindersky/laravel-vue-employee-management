@@ -23,6 +23,7 @@ export default defineConfig({
     resolve: {
         alias: {
             vue: 'vue/dist/vue.esm-bundler.js',
+/*             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'), */
         },
     },
 });

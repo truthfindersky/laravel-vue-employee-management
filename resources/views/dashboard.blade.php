@@ -2,6 +2,7 @@
 @section('title','Dashboard')
 
 @section('content')
+
 <div class="pagetitle">
     <h1>Dashboard</h1>
     <nav>
@@ -210,6 +211,8 @@
 
           
 
+          
+
        
 
         </div>
@@ -275,5 +278,7 @@
 
     </div>
   </section>
+
+
 
 @endsection

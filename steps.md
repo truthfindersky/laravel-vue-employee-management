@@ -32,14 +32,20 @@ login.blade.php
 
 4. Template Mastering
 
-
+main.blade.php
+header.blade.php
+sidebar.blade.php
+footer.blade.php
+dashboard.blade.php
 
 5. Authentication
+
 LoginController.php
 protected $maxAttempts = 3; // Default is 5
 protected $decayMinutes = 5; // Default is 1
 
 6. Users
+
 php artisan make:controller Backend/UserController --resource
 php artisan make:request  UserStoreRequest
 php artisan make:request  UserUpdateRequest

@@ -5,7 +5,9 @@
 @import 'variables';
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+//@import 'bootstrap/scss/bootstrap';
+
+@import '../assets/vendor/bootstrap/css/bootstrap.min.css';
 
 @import '../css/app.css';
 
