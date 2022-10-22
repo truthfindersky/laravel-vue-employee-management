@@ -14,7 +14,7 @@ class CountryController extends Controller
     {
         $countries = Country::all();
         if ($request->has('search')) {
-            $countries = Country::where('name', 'like', "%{$request->search}%")->orWhere('country_code', 'like', "%{$request->search}%")->get();
+            $countries = Country::where('name', 'like', "%{$request->search}%")->orWhere('country_code', 'like', "%{$request->search}%")->orWhere('dial_code', 'like', "%{$request->search}%")->get();
         }
         return view('countries.index', compact('countries'));
     }

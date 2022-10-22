@@ -4,7 +4,7 @@
 @section('content')
     <section class="section">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="card">
                     @if (session()->has('message'))
                         <div class="alert alert-success">
@@ -39,6 +39,7 @@
                                 <tr>
                                     <th scope="col">#ID</th>
                                     <th scope="col">Country Code</th>
+                                    <th scope="col">Dial Code</th>
                                     <th scope="col">Country Name</th>
                                     <th scope="col">Manage</th>
                                 </tr>
@@ -48,6 +49,7 @@
                                     <tr>
                                         <td>{{ $country->id }}</td>
                                         <td>{{ $country->country_code }}</td>
+                                        <td>{{ $country->dial_code }}</td>
                                         <td>{{ $country->name }}</td>
                                         <td>
                                             <a href="{{ route('countries.edit', $country->id) }}"

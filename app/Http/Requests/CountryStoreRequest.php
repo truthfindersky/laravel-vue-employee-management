@@ -24,8 +24,9 @@ class CountryStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'country_code' => ['required', 'max:3'],
-            'name'         => ['required']
+            'name'         => ['required'],
+            'dial_code'         => ['required'],
+            'country_code' => ['required', 'max:3']
         ];
     }
 }

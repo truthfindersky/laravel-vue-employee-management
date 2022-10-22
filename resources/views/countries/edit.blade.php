@@ -34,6 +34,21 @@
                             </div>
 
                             <div class="col-12">
+                                <label for="dial_code">{{ __('Dital Code') }}</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control @error('dial_code') is-invalid @enderror"
+                                        id="dial_code" name="dial_code" placeholder="Country Code"
+                                        value="{{ old('dial_code', $country->dial_code) }}" required
+                                        autocomplete="dial_code" autofocus>
+                                    @error('dial_code')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="col-12">
                                 <label for="name">{{ __('Country Name') }}</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control @error('name') is-invalid @enderror"

@@ -70,6 +70,14 @@ Department
 php artisan make:controller Backend/DepartmentController --resource
 php artisan make:request  DepartmentStoreRequest
 
+Country Data import
+php artisan make:seeder CountrySeeder
+php artisan db:seed --class=CountrySeeder
+
+//Future tasks
+php artisan make:seeder StateSeeder
+php artisan db:seed --class=StateSeeder
+
 8. Employee Management
 php artisan make:controller Api/EmployeeController --resource
 

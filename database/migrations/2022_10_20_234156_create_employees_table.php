@@ -27,7 +27,7 @@ return new class extends Migration
             $table->date('birthdate')->nullable();
             $table->date('date_hired')->nullable();
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
